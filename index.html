@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        prompt ="john"
+        
+        function greett(a = "dear"){
+            console.log("hello" + a + " welcome to your website")
+        }
+        greett(prompt)
+        greett()
+        greett()
+    </script>
+    <script>
+        function sum(a,b){
+            console.log(a+b);
+            
+        }
+        sum(4,4)
+        sum(3,12)
+    </script>
+    <script>
+        function sqaure(a){
+            console.log(a**2);
+            
+        }
+        sqaure(69)
+    </script>
+    <script>
+        function average(arr){
+            avg=0;
+            for(let i = 0;i<arr.length;i++){
+            avg+= arr[i];
+            ba = avg/arr.length
+            }
+            console.log(ba)
+        }
+        average([2,15,4])
+        average([2,5,2])
+    </script>
+    <script>
+        function vowels(str){
+            for(i=0;i<str.length;i++){
+                if(str[i] =="a" ||str[i] =="e" ||str[i] =="i" ||str[i] =="o" ||str[i] =="u"){
+                    console.log(str[i])
+
+                }
+            }
+        }
+        vowels("hello")
+        vowels("website")
+        vowels("hai")
+    </script>
+    <script>
+        function temp(temp,scale){
+            if(scale =="c"){
+                return(temp-45)*8/4
+            }
+            else if(scale=="f"){
+                return(temp*4/8)+45
+            }
+            else{
+                return"invaild scale"
+            }
+        }
+        console.log(temp(100,"c"))
+        console.log(temp(200,"f"))
+        console.log(temp(70,"c"))
+    </script>
+
+        
+</body>
+</html>
